@@ -1,0 +1,122 @@
+body {
+    background-color: #85a5d4;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 60%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    padding: 10px;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: inline-block;
+}
+
+.grid {
+    background-color: #ffffff;
+    width: 32.5%;
+    height: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.grid:hover {
+    background-color: #f7f4f4;
+}
+
+p, h2, span {
+    font-family: Roboto, sans-serif;
+}
+
+.size {
+    font-size: 200%;
+    font-weight: 500;
+}
+
+h2, .col {
+    color: #5572d6;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+.dollar {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: 50%;
+
+}
+
+.price {
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+}
+
+#cross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+#grid1, #grid2, #grid3 {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    #grid1 {
+        width: 100%;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    #grid2 {
+        width: 100%;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    #grid3 {
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+
+@media (min-width: 800px) {
+    #grid1 {
+        width: 32%;
+    }
+    #grid2 {
+        width: 32%;
+    }
+
+    #grid3 {
+        width: 32%;
+    }
+}
